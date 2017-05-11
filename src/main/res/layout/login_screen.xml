@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="70"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="50"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:inputType="textCapWords"
+            android:hint="Username" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:id="@+id/login_button"
+            android:text="Login"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="-30dp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:id="@+id/about"
+                android:gravity="center_horizontal"
+                android:text="About"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:id="@+id/privacy_policy"
+                android:gravity="center_horizontal"
+                android:text="Privacy Policy"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:id="@+id/F.A.Q"
+                android:gravity="center_horizontal"
+                android:text="F.A.Q"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
