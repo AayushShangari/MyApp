@@ -24,6 +24,7 @@ public class WsCall extends AsyncTask<String, Void, String> {
             URL url = new URL(urlString);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod(method);
+            httpURLConnection.setConnectTimeout(15000);
             httpURLConnection.connect();
 
             InputStream inputStream = httpURLConnection.getInputStream();
